@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All In Calisthenics</title>
+    <link rel="shortcut icon" href="assets/LogoSample_AllIn.jpg" type="image/x-icon">
+
+    <!--ANIMATE CSS-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--BOOSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--CUSTOM CSS-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="text-white body__programas">
+
+    <!--NAV-->
+
+    <div class="container-fluid p-0">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-xl-top sticky-lg-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/LogoSample_AllIn.jpg" alt="logo nav" class="logo__nav rounded-circle">
+                </a>
+                <a class="navbar-brand" href="index.html">ALL IN CALISTHENICS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
+                    aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end pe-5" id="navbarColor02">
+                    <ul class="navbar-nav pe-5">
+                        <li class="nav-item">
+                            <a class="nav-link active px-3" href="index.html">HOME
+                                <span class="visually-hidden">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="programas.html">PROGRAMAS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-primary btn-sm px-3" href="allinpro.html">All In PRO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-3" href="login.html">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--HEADER-->
+
+    <header id="header header__programas bg__programas">
+        <div class="container-sm d-flex flex-column align-items-center lh-3 text-center">
+            <h1 class="mt-5">Programas y Guias de Ejercicios</h1>
+            <h6>Antes de comenzar nos gustaria conocerte un poco mas para poder adapatar los entrenamientos y rutinas
+                segun tusobjetivos capacidades</h6>
+        </div>
+    </header>
+
+    <!--SECTION-->
+
+    <section id="section" class="section__programas bg__programas">
+        <div class="section__niveles text-dark">
+            <div class="container-sm mt-4 d-flex flex-column align-items-center">
+                <h2 class="mt-4 text-decoration-underline text-light">Selecciona tu nivel:</h2>
+                <div class="col d-flex justify-content-center mt-4">
+
+
+                    <!--Level Cards-->
+                    <div
+                        class="container-md container__cards container d-flex justify-content-center align-items-center">
+                        <div class="container d-flex justify-content-between">
+
+                            <!--Begginer-->
+                            <div class="card begginer  border-primary border border-5">
+                                <div class="front"><img src="assets/frontlever.png" alt="Begginer" class="front"></div>
+                                <div class="back d-flex flex-column align-items-start px-2 m-auto">
+                                    <h4>Begginer</h4>
+                                    <p>Loreipsum dolorsit amet consectetur adipisicing elit. Recusandae autem, cumque
+                                        commodi delectuvero ipsa ametinventore doloremque fugiat repellendus.</p>
+                                </div>
+                            </div>
+
+                            <!--Intermediate-->
+                            <div class="card intermediate  border-warning border border-5">
+                                <div class="front"><img src="assets/full planche.jpg" alt="Intermediate" class="front">
+                                </div>
+                                <div class="back d-flex flex-column align-items-start px-2 m-auto">
+                                    <h4>Intermediate</h4>
+                                    <p>Lorem ipsumdolor sit amet consectetur adipisicing elit. Quos, sit veritatis. Nam
+                                        incidunaliquam quia quibusdam!Consectetur maiores voluptatum aut!</p>
+                                </div>
+                            </div>
+
+                            <!--Advanzed-->
+                            <div class="card advanzed  border-danger border border-5">
+                                <div class="front"><img src="assets/one arm pull up.jpg" alt="Advanzed" class="front">
+                                </div>
+                                <div class="back d-flex flex-column align-items-start px-2 m-auto">
+                                    <h4>Advanzed</h4>
+                                    <p>Loreipsum dolorsit amet consectetur adipisicing elit. Ad, deserunt. Officia sunt
+                                        debitiaccusantium voluptatum vitaequia ab corporis vero.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--Level Carousel-->
+                    <div id="carouselExampleControls" class="carousel slide mb-5 carousel__programas"
+                        data-bs-ride="carousel">
+
+                        <!--Imagenes-->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h6 class=" btn btn-info">Begginer</h6>
+                                <img src="assets/frontlever.png" class="d-block w-100" alt="Begginer">
+                            </div>
+                            <div class="carousel-item">
+                                <h6 class="btn btn-warning">Intermediate</h6>
+                                <img src="assets/full planche.jpg" class="d-block w-100" alt="Intermediate">
+                            </div>
+                            <div class="carousel-item">
+                                <h6 class="btn btn-danger">Advanzed</h6>
+                                <img src="assets/one arm pull up.jpg" class="d-block w-100" alt="Advanzed">
+                            </div>
+                        </div>
+
+                        <!--Buttons-->
+                        <button class="carousel-control-prev" type="button" data-bs-target=#carouselExampleControls
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target=#carouselExampleControls
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+
+    <footer id="footer">
+        <div class="container-sm">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 row-cols-l-4 mt-5">
+
+                <div>
+                    <!--Company-->
+                    <ul class="d-flex flex-column align-items-center list-unstyled">Company
+                        <li><a href="" class="text-decoration-none link-secondary">Contact Us</a></li>
+                        <li><a href="" class="text-decoration-none link-secondary">Blog</a></li>
+                        <li><a href="shop.html" class="text-decoration-none link-secondary">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <!--Social-->
+                    <ul class="d-flex flex-column align-items-center list-unstyled">Social
+                        <li><a href="https://www.youtube.com/" target="_blank"
+                                class="text-decoration-none link-secondary">Youtube<a></li>
+                        <li><a href="https://www.instagram.com/?hl=es-la" class="text-decoration-none link-secondary"
+                                target="_blank">Instagram</a></li>
+                        <li><a href="https://es-la.facebook.com/" class="text-decoration-none link-secondary"
+                                target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/?lang=es" class="text-decoration-none link-secondary"
+                                target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <!--Get The App-->
+                    <ul class="d-flex flex-column align-items-center list-unstyled" target="_blank">Get The APP
+                        <li><a href="https://www.apple.com/la/app-store/" class="text-decoration-none link-secondary"
+                                target="_blank">App Store</a></li>
+                        <li><a href="https://play.google.com/store?hl=es_AR&gl=US"
+                                class="text-decoration-none link-secondary" target="_blank">Google Play</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <!--All In PRO-->
+                    <ul class="d-flex flex-column align-items-center list-unstyled" target="_blank">All In PRO
+                        <li><a href="programas.html" class="text-decoration-none link-secondary"
+                                target="_blank">Programas</a></li>
+                        <li><a href="" class="text-decoration-none link-secondary" target="_blank">Rutinas</a></li>
+                        <li><a href="" class="text-decoration-none link-secondary" target="_blank">Guias</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <hr class="mx-auto my-4">
+        <p class="d-flex justify-content-center text-center">All In Calisthenics 2022 - Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

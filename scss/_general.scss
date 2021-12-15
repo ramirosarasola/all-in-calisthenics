@@ -1,0 +1,31 @@
+//Variables Globales
+
+$black:#000;
+$hr-width: 70%;
+$b-radius-1: 10px;
+$b-radius-2: 20px;
+$b-radius-circle: 100%;
+
+
+body{
+    footer{
+        hr{
+        width: $hr-width;
+        }        
+    }
+}
+
+//Navegacion para todas las secciones
+
+.logo__nav{
+    height: 50px;
+    width: 50px;
+    &:hover{
+        transition-property: all;
+        transition-duration:2s;
+        transition-timing-function: linear;
+        transform: rotate(360deg);
+    }
+}
+
+
