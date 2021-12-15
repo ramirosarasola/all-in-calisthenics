@@ -7,14 +7,16 @@ $footer-width: 70%;
 
 @import "general";
 @import "backgrounds";
+@import "fonts";
 
 //index.html
 
 //HEADER
 
-.index__header{
+.index__header {
     height: 70vh;
-    .header__container{
+
+    .header__container {
         position: relative;
         top: -10%;
     }
@@ -22,27 +24,30 @@ $footer-width: 70%;
 
 //MAIN
 
-.index__main{
-    .main__img-app{
+.index__main {
+    .main__img-app {
         transform: skewY(15deg);
         opacity: .5;
         border-radius: 10px;
         width: 200px;
         height: auto;
+        box-shadow: .4rem .4rem 1rem #a8eeff;
     }
-    .main__img-app2{
+
+    .main__img-app2 {
         @extend .main__img-app;
         transform: skewY(-15deg);
     }
-    .img__descargaApp{
+
+    .img__descargaApp {
         width: 8rem;
     }
 }
 
 //SHOP
 
-#section__shop{
-    img{
+#section__shop {
+    img {
         width: 200px;
         height: 200px;
     }
@@ -50,93 +55,101 @@ $footer-width: 70%;
 
 //programas.html
 
-@media only screen and (min-width:992px){
-    .section__programas{
+@media only screen and (min-width:992px) {
+    .section__programas {
         height: 35rem;
 
-            .carousel__programas{
-                visibility: hidden;
+        .carousel__programas {
+            visibility: hidden;
+        }
+
+        .container {
+            perspective: 1000px;
+        }
+
+        .container__cards {
+            position: absolute;
+            height: 40vh;
+
+            .container {
+                .begginer:hover {
+                    transform: rotateY(180deg);
+                }
+
+                .intermediate:hover {
+                    @extend .begginer;
+                }
+
+                .advanzed:hover {
+                    @extend .begginer;
+                }
             }
 
-            .container{
-                perspective: 1000px;
-            }
+            .card {
+                border-radius: 20px;
+                height: 200px;
+                width: 290px;
+                position: relative;
+                transition: all 1s linear;
+                transform-style: preserve-3d;
 
-                .container__cards{
+                .front {
+                    color: #fff;
+                    height: 100%;
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 2rem;
+                    font-family: sans-serif;
+                    border-radius: 10px;
                     position: absolute;
-                    height: 40vh;
 
-                    .container{
-                        .begginer:hover{
-                            transform: rotateY(180deg);
-                        }
-                        .intermediate:hover{
-                            @extend .begginer;
-                        }
-                        .advanzed:hover{
-                            @extend .begginer;
-                        }
+                    background: linear-gradient(#08aeea, #2af598);
+                    z-index: 2;
+                    backface-visibility: hidden;
+                }
+
+                .back {
+                    @extend .front;
+                    background: linear-gradient(#161616, #999999);
+                    z-index: 1;
+                    transform: rotateY(180deg);
+                    backface-visibility: visible;
+
+                    p {
+                        font-size: 10px;
                     }
-                    
-                    .card{
-                        border-radius: 20px;
-                        height: 200px;
-                        width: 290px;
-                        position: relative;
-                        transition: all 1s linear;
-                        transform-style: preserve-3d;
+                }
 
-                        .front{
-                            color: #fff;
-                            height: 100%;
-                            width: 100%;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            font-size: 2rem;
-                            font-family: sans-serif;
-                            border-radius: 10px;
-                            position: absolute;
-
-                            background: linear-gradient(#08aeea, #2af598);
-                            z-index: 2;
-                            backface-visibility: hidden;
-                        }
-
-                        .back{
-                            @extend .front;
-                            background: linear-gradient(#161616, #999999);
-                            z-index: 1;
-                            transform: rotateY(180deg);
-                            backface-visibility: visible;
-
-                            p{
-                                font-size: 10px;
-                            }
-                        }
-
-                    }
-                }               
+            }
+        }
     }
 }
 
-.carousel__item{
-    img{
+.carousel__item {
+    img {
         border-radius: $b-radius-2;
     }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 992px) {
 
-    .container__cards{
+    .container__cards {
         visibility: hidden;
         position: absolute;
     }
 }
 
+//allinpro.html
 
+#beneficios {
+    h3 {
+        font-size: 1.4rem;
+    }
 
-
-
-
-
+    p {
+        font-size: 1rem;
+        font-style: italic;
+    }
+}

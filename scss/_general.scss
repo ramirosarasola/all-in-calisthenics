@@ -5,27 +5,31 @@ $hr-width: 70%;
 $b-radius-1: 10px;
 $b-radius-2: 20px;
 $b-radius-circle: 100%;
+$form-shadow:0 0 .3rem #c0e0ec;
 
 
-body{
-    footer{
-        hr{
-        width: $hr-width;
-        }        
+body {
+    footer {
+        hr {
+            width: $hr-width;
+        }
     }
+}
+
+input {
+    box-shadow: $form-shadow;
 }
 
 //Navegacion para todas las secciones
 
-.logo__nav{
+.logo__nav {
     height: 50px;
     width: 50px;
-    &:hover{
+
+    &:hover {
         transition-property: all;
-        transition-duration:2s;
+        transition-duration: 2s;
         transition-timing-function: linear;
         transform: rotate(360deg);
     }
 }
-
-

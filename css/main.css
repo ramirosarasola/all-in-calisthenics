@@ -2,6 +2,10 @@ body footer hr {
   width: 70%;
 }
 
+input {
+  box-shadow: 0 0 0.3rem #c0e0ec;
+}
+
 .logo__nav {
   height: 50px;
   width: 50px;
@@ -33,6 +37,18 @@ body {
   background-color: #000;
 }
 
+nav {
+  font-family: helvetica;
+  font-size: 14px;
+  font-weight: 500;
+}
+nav .navbar-brand {
+  font-family: helvetica;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .index__header {
   height: 70vh;
 }
@@ -47,6 +63,7 @@ body {
   border-radius: 10px;
   width: 200px;
   height: auto;
+  box-shadow: 0.4rem 0.4rem 1rem #a8eeff;
 }
 .index__main .main__img-app2 {
   transform: skewY(-15deg);
@@ -119,6 +136,13 @@ body {
     visibility: hidden;
     position: absolute;
   }
+}
+#beneficios h3 {
+  font-size: 1.4rem;
+}
+#beneficios p {
+  font-size: 1rem;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=main.css.map */

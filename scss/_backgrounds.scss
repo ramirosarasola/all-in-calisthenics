@@ -1,28 +1,27 @@
 //Vars Colors
-$l-gradient-black: linear-gradient( 2.6deg,  rgb(255, 255, 255) -0.9%, rgb(0, 0, 0) 78.4%);
-$r-gradient-black: radial-gradient( circle 1144px at 10% 20%,  rgba(0,0,0,1) 48.3%, rgba(187,187,187,1) 48.5%);
-$l-gradient-blue:linear-gradient( 2.6deg,  rgba(10,48,255,1) -0.9%, rgba(0,0,0,1) 78.4%);
+$l-gradient-black: linear-gradient(2.6deg, rgb(255, 255, 255) -0.9%, rgb(0, 0, 0) 78.4%);
+$r-gradient-black: radial-gradient(circle 1144px at 10% 20%, rgba(0, 0, 0, 1) 48.3%, rgba(187, 187, 187, 1) 48.5%);
+$l-gradient-blue:linear-gradient(2.6deg, rgba(10, 48, 255, 1) -0.9%, rgba(0, 0, 0, 1) 78.4%);
 $black:#000;
 
 
-.shop__main{
-    background-image:$l-gradient-black;
+.shop__main {
+    background-image: $l-gradient-black;
 }
 
-.bg__programas{
+.bg__programas {
     background-image: $l-gradient-black;
 }
 
 
-.section__allInPro--bg{
-    background-image:$r-gradient-black
+.section__allInPro--bg {
+    background-image: $r-gradient-black
 }
 
-#beneficios{
-    background-image:$l-gradient-blue
+#beneficios {
+    background-image: $l-gradient-blue
 }
 
-body{
+body {
     background-color: $black;
 }
-
