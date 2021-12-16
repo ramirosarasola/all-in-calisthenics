@@ -230,8 +230,28 @@ nav .navbar-brand {
 
 @media only screen and (max-width: 992px) {
   .container__cards {
-    visibility: hidden;
     position: absolute;
+    visibility: hidden;
+    width: 2px;
+    height: 10px;
+    top: 550px;
+  }
+  .container__cards .card {
+    height: 200px;
+  }
+  .container__cards .card .back {
+    position: absolute;
+    left: -100px;
+  }
+  .container__cards .card p {
+    height: 200px;
+    flex-wrap: nowrap;
+    color: transparent;
+  }
+  .container__cards .card img {
+    position: absolute;
+    width: 200px;
+    left: -200px;
   }
 }
 #beneficios h3 {

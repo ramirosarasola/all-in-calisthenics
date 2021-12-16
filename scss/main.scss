@@ -178,8 +178,29 @@ $footer-width: 70%;
 @media only screen and (max-width: 992px) {
 
     .container__cards {
-        visibility: hidden;
         position: absolute;
+        visibility: hidden;
+        width: 2px;
+        height: 10px;
+        top: 550px;
+
+        .card{
+            .back{
+                position: absolute;
+                left: -100px;
+            }
+            height: 200px;
+            p{
+                height: 200px;
+                flex-wrap:nowrap;
+                color: transparent;
+            }
+            img{
+                position: absolute;
+                width: 200px;
+                left: -200px;
+            }
+        }
     }
 }
 
