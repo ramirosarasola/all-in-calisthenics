@@ -1,4 +1,18 @@
-body footer hr {
+#footer {
+  margin: auto;
+  max-width: 786px;
+}
+#footer .container-sm {
+  max-width: 772px;
+}
+#footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#footer hr {
   width: 70%;
 }
 
@@ -15,6 +29,10 @@ input {
   transition-duration: 2s;
   transition-timing-function: linear;
   transform: rotate(360deg);
+}
+
+.index_main {
+  background-color: #000;
 }
 
 .shop__main {
@@ -51,13 +69,47 @@ nav .navbar-brand {
 
 .index__header {
   height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .index__header .header__container {
   position: relative;
   top: -10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.index__main .main__img-app, .index__main .main__img-app2 {
+.index__main #index__main__container {
+  max-width: 1170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: 0;
+}
+.index__main #index__main__container .row {
+  max-width: 959px;
+  display: flex;
+  flex-direction: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: 0;
+}
+.index__main #index__main__container .row #index__main--img {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: "";
+}
+.index__main #index__main__container .row #index__main--img .main__img-app, .index__main #index__main__container .row #index__main--img .main__img-app2 {
   transform: skewY(15deg);
   opacity: 0.5;
   border-radius: 10px;
@@ -65,11 +117,56 @@ nav .navbar-brand {
   height: auto;
   box-shadow: 0.4rem 0.4rem 1rem #a8eeff;
 }
-.index__main .main__img-app2 {
+.index__main #index__main__container .row #index__main--img .main__img-app2 {
   transform: skewY(-15deg);
 }
-.index__main .img__descargaApp {
+.index__main #index__main__container .row #index__main--img #index__main--desc {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  text-align: "";
+}
+
+@media only screen and (max-width: 760px) {
+  #index__main--desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+  }
+  #index__main--desc #index__main--desc__h6 {
+    max-width: 300px;
+    margin: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
+
+.img__descargaApp {
   width: 8rem;
+}
+
+#section__shop__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#section__shop__container .section__shop__container--img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #section__shop img {

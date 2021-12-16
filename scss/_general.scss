@@ -7,14 +7,31 @@ $b-radius-2: 20px;
 $b-radius-circle: 100%;
 $form-shadow:0 0 .3rem #c0e0ec;
 
+//IMPORT
 
-body {
-    footer {
-        hr {
-            width: $hr-width;
-        }
+@import "mixin";
+
+//Footer para todas las secciones
+
+#footer{
+    margin: auto;
+    max-width: 786px;
+
+    .container-sm{
+        max-width: 772px;;
+    }
+    .footer__list{
+        @include flex-center (flex,column,center)
+    }
+
+    hr {
+        width: $hr-width;
     }
 }
+
+
+
+//Elementos para todas las secciones
 
 input {
     box-shadow: $form-shadow;
@@ -33,3 +50,6 @@ input {
         transform: rotate(360deg);
     }
 }
+
+
+

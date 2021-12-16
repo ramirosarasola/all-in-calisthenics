@@ -1,0 +1,23 @@
+//Mixins con Parametros
+
+@mixin flex-center ($display:flex, $flex-d:row, $align-i:center, $justify-c:center, $text-a:center){
+    display: $display;
+    flex-direction: $flex-d;
+    align-items: $align-i;
+    justify-content: $justify-c;
+    text-align: $text-a;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

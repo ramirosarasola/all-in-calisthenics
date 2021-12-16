@@ -8,43 +8,85 @@ $footer-width: 70%;
 @import "general";
 @import "backgrounds";
 @import "fonts";
+@import "mixin";
 
 //index.html
 
 //HEADER
 
-.index__header {
+.index__header{
     height: 70vh;
-
-    .header__container {
+    @include flex-center(flex, column, center, center);
+    .header__container{
         position: relative;
         top: -10%;
+        @include flex-center(flex, column, center,center,center);
     }
 }
 
 //MAIN
+.index__main{
+    #index__main__container{
+        max-width: 1170px;
+        @include flex-center(flex, column, center, center,0);
+        .row{
+            max-width:959px ;
+            @include flex-center(flex,0,center,center,0);
+            #index__main--img{
+                max-width: 480px;
+                @include flex-center(flex,column,center,center,"");
 
-.index__main {
-    .main__img-app {
-        transform: skewY(15deg);
-        opacity: .5;
-        border-radius: 10px;
-        width: 200px;
-        height: auto;
-        box-shadow: .4rem .4rem 1rem #a8eeff;
-    }
+                .main__img-app {
+                    transform: skewY(15deg);
+                    opacity: .5;
+                    border-radius: 10px;
+                    width: 200px;
+                    height: auto;
+                    box-shadow: .4rem .4rem 1rem #a8eeff;
+                }
+            
+                .main__img-app2 {
+                    @extend .main__img-app;
+                    transform: skewY(-15deg);
+                }
 
-    .main__img-app2 {
-        @extend .main__img-app;
-        transform: skewY(-15deg);
-    }
-
-    .img__descargaApp {
-        width: 8rem;
+                #index__main--desc{
+                    max-width: 480px;
+                    @include flex-center(flex,column,start,center,"");                    
+                }
+            }
+        }
     }
 }
 
+#index__main--desc{
+    @media only screen and (max-width:760px){
+        @include flex-center (flex,column,center,center,start);
+        #index__main--desc__h6{
+            max-width: 300px;
+            margin: auto;
+            height: auto;
+            @include flex-center;
+            margin-bottom: 1rem;
+
+        }
+    }
+}
+
+
+
+.img__descargaApp{
+    width: 8rem;
+}
+
 //SHOP
+
+#section__shop__container{
+    @include flex-center (flex,column,center);
+    .section__shop__container--img{
+        @include flex-center (flex,column);
+    }
+}
 
 #section__shop {
     img {
@@ -153,3 +195,4 @@ $footer-width: 70%;
         font-style: italic;
     }
 }
+
