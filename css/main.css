@@ -111,7 +111,7 @@ nav .navbar-brand {
 .index__main #index__main__container .row {
   max-width: 959px;
   display: flex;
-  flex-direction: 0;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: 0;
@@ -135,7 +135,7 @@ nav .navbar-brand {
 .index__main #index__main__container .row #index__main--img .main__img-app2 {
   transform: skewY(-15deg);
 }
-.index__main #index__main__container .row #index__main--img #index__main--desc {
+.index__main #index__main__container .row #index__main--desc {
   max-width: 480px;
   display: flex;
   flex-direction: column;
@@ -152,12 +152,12 @@ nav .navbar-brand {
     justify-content: center;
     text-align: start;
   }
-  #index__main--desc #index__main--desc__h6 {
+  #index__main--desc #index__main--desc {
     max-width: 300px;
     margin: auto;
     height: auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;

@@ -13,15 +13,17 @@ $form-shadow:0 0 .3rem #c0e0ec;
 
 //Footer para todas las secciones
 
-#footer{
+#footer {
     margin: auto;
     max-width: 786px;
 
-    .container-sm{
-        max-width: 772px;;
+    .container-sm {
+        max-width: 772px;
+        ;
     }
-    .footer__list{
-        @include flex-center (flex,column,center)
+
+    .footer__list {
+        @include flex-center (flex, column, center)
     }
 
     hr {
@@ -50,6 +52,3 @@ input {
         transform: rotate(360deg);
     }
 }
-
-
-

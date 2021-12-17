@@ -2,14 +2,15 @@
 
 $nav-font: helvetica;
 
-nav{
+nav {
     font-family: $nav-font;
     font-size: 14px;
-    font-weight:500;
-    .navbar-brand{
+    font-weight: 500;
+
+    .navbar-brand {
         font-family: $nav-font;
         font-size: 16px;
-        font-weight:bold;
+        font-weight: bold;
         font-style: italic;
     }
 }
