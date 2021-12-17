@@ -1,0 +1,38 @@
+//MAPS
+
+$buttons:(
+    primary: #2f60ff,
+    secondary: #3d3d3d,
+    success: #18d111,
+    danger: #ff0f0f,
+    warning: #ddcf06,
+    info:#00f7ff,
+    light:#fff,
+    dark: #000000,
+);
+
+//accesdo a las llaves
+
+$primary: map-get($buttons,primary);
+$secondary: map-get($buttons,secondary);
+$success: map-get($buttons,success);
+$danger: map-get($buttons,danger);
+$warning: map-get($buttons,warning);
+$info: map-get($buttons,info);
+$light: map-get($buttons,light);
+$dark: map-get($buttons,dark);
+
+.index__section__shop{
+        background-color:$light;
+        border: solid 1px;
+        &:hover{
+            background-color: $secondary;
+        }
+        a{
+            color: $dark;
+            margin: 0;
+            &:hover{
+                color: $light;
+            }
+        }
+}

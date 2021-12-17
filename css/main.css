@@ -67,6 +67,21 @@ nav .navbar-brand {
   font-style: italic;
 }
 
+.index__section__shop {
+  background-color: #fff;
+  border: solid 1px;
+}
+.index__section__shop:hover {
+  background-color: #3d3d3d;
+}
+.index__section__shop a {
+  color: #000000;
+  margin: 0;
+}
+.index__section__shop a:hover {
+  color: #fff;
+}
+
 .index__header {
   height: 70vh;
   display: flex;
