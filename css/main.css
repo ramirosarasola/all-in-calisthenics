@@ -20,6 +20,11 @@ input {
   box-shadow: 0 0 0.3rem #c0e0ec;
 }
 
+.logo__settings {
+  width: 30px;
+  height: 30px;
+}
+
 .logo__nav {
   height: 50px;
   width: 50px;
