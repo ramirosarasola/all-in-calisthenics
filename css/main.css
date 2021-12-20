@@ -200,6 +200,7 @@ nav .navbar-brand {
     perspective: 1000px;
   }
   .section__programas .container__cards {
+    max-width: 960px;
     position: absolute;
     height: 40vh;
   }
