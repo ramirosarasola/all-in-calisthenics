@@ -31,6 +31,10 @@ input {
   transform: rotate(360deg);
 }
 
+.nav-item {
+  max-width: 99px;
+}
+
 .index_main {
   background-color: #000;
 }
