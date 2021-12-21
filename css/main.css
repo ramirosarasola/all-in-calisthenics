@@ -16,33 +16,8 @@
   width: 70%;
 }
 
-.wpp__svg {
-  display: flex;
-  flex-direction: row;
-  align-items: end;
-  justify-content: end;
-  text-align: center;
-  position: sticky;
-}
-.wpp__svg a {
-  position: fixed;
-  z-index: 500;
-  color: green;
-  margin-right: 30px;
-  font-size: 2rem;
-  background-color: #fff;
-  width: 50px;
-  border-radius: 20px;
-}
-.wpp__svg a:hover {
-  transition-property: all;
-  transform: scale(1.3, 1.3);
-  transform: rotate(360deg);
-  transition-duration: 1s;
-}
-
 input {
-  box-shadow: 0 0 0.3rem #c0e0ec;
+  box-shadow: 0 0 0.3rem #ffecec;
 }
 
 .logo__nav {
@@ -60,7 +35,11 @@ input {
   max-width: 120px;
 }
 
-.index_main {
+.index__header {
+  background-color: #000;
+}
+
+.index__main {
   background-color: #000;
 }
 
@@ -129,6 +108,31 @@ nav .navbar-brand {
   text-align: center;
 }
 
+.wpp__svg {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  text-align: center;
+  position: sticky;
+}
+.wpp__svg a {
+  position: fixed;
+  z-index: 500;
+  color: green;
+  margin-right: 30px;
+  font-size: 2rem;
+  background-color: #fff;
+  width: 50px;
+  border-radius: 20px;
+}
+.wpp__svg a:hover {
+  transition-property: all;
+  transform: scale(1.3, 1.3);
+  transform: rotate(360deg);
+  transition-duration: 1s;
+}
+
 .index__main #index__main__container {
   max-width: 1170px;
   display: flex;
@@ -159,7 +163,7 @@ nav .navbar-brand {
   border-radius: 10px;
   width: 200px;
   height: auto;
-  box-shadow: 0.4rem 0.4rem 1rem #e0f9ff;
+  box-shadow: 0.4rem 0.4rem 1rem #e3f9ff;
 }
 .index__main #index__main__container .row #index__main--img .main__img-app2 {
   transform: skewY(-15deg);

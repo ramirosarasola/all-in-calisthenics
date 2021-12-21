@@ -4,8 +4,12 @@ $r-gradient-black: radial-gradient(circle 1144px at 10% 20%, rgba(0, 0, 0, 1) 48
 $l-gradient-blue:linear-gradient(2.6deg, rgba(10, 48, 255, 1) -0.9%, rgba(0, 0, 0, 1) 78.4%);
 $black:#000;
 
+.index__header{
+    background-color: $black;
+}
 
-.index_main {
+
+.index__main {
     background-color: $black;
 }
 
