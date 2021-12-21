@@ -16,6 +16,22 @@
   width: 70%;
 }
 
+.wpp__svg {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  text-align: center;
+  position: sticky;
+}
+.wpp__svg a {
+  position: fixed;
+  z-index: 500;
+  color: green;
+  margin-right: 30px;
+  font-size: 2rem;
+}
+
 input {
   box-shadow: 0 0 0.3rem #c0e0ec;
 }

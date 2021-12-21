@@ -34,6 +34,19 @@ $form-shadow:0 0 .3rem #c0e0ec;
 
 
 //Elementos para todas las secciones
+.wpp__svg {
+    @include flex-center(flex, row, end, end, );
+    position: sticky;
+
+    a {
+        position: fixed;
+        z-index: 500;
+        color: green;
+        margin-right: 30px;
+        font-size: 2rem;
+    }
+}
+
 
 input {
     box-shadow: $form-shadow;
@@ -53,7 +66,6 @@ input {
     }
 }
 
-.nav-item{
+.nav-item {
     max-width: 120px;
 }
-
