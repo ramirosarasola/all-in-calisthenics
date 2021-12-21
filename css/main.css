@@ -30,6 +30,15 @@
   color: green;
   margin-right: 30px;
   font-size: 2rem;
+  background-color: #fff;
+  width: 50px;
+  border-radius: 20px;
+}
+.wpp__svg a:hover {
+  transition-property: all;
+  transform: scale(1.3, 1.3);
+  transform: rotate(360deg);
+  transition-duration: 1s;
 }
 
 input {
