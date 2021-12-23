@@ -81,7 +81,7 @@ $footer-width: 70%;
 
             #index__main--desc {
                 max-width: 480px;
-                @include flex-center(flex, column, start, center, "");
+                @include flex-center(flex,column,start,center,"");
             }
 
         }
@@ -119,7 +119,7 @@ $footer-width: 70%;
     }
 }
 
-#section__shop {
+#index__section__shop {
     img {
         width: 200px;
         height: 200px;
@@ -252,3 +252,24 @@ $footer-width: 70%;
         font-style: italic;
     }
 }
+
+//shop.html
+
+.shop__btn--contact{
+    align-self: flex-end;
+    position: absolute;
+    top: 128px;
+    @media screen and (max-width:768px) {
+        visibility:hidden;        
+    }
+}
+
+#section__shop{
+    img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+

@@ -102,6 +102,16 @@ nav .navbar-brand {
   color: #fff;
 }
 
+.btn__ml:hover {
+  color: #2f60ff;
+  background-color: #ddcf06;
+}
+
+.btn__wpp:hover {
+  color: #fff;
+  background-color: #048300;
+}
+
 .index__header {
   height: 90vh;
   display: flex;
@@ -231,7 +241,7 @@ nav .navbar-brand {
   text-align: center;
 }
 
-#section__shop img {
+#index__section__shop img {
   width: 200px;
   height: 200px;
 }
@@ -323,6 +333,22 @@ nav .navbar-brand {
 #beneficios p {
   font-size: 1rem;
   font-style: italic;
+}
+
+.shop__btn--contact {
+  align-self: flex-end;
+  position: absolute;
+  top: 128px;
+}
+@media screen and (max-width: 768px) {
+  .shop__btn--contact {
+    visibility: hidden;
+  }
+}
+
+#section__shop img {
+  width: 200px;
+  height: 200px;
 }
 
 /*# sourceMappingURL=main.css.map */
