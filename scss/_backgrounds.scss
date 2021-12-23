@@ -6,11 +6,18 @@ $black:#000;
 
 .index__header{
     background-color: $black;
+    img{
+        position: absolute;
+        opacity: .2;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 
 .index__main {
     background-color: $black;
+    position: relative;
 }
 
 .shop__main {

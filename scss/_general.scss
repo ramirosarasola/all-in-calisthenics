@@ -5,7 +5,7 @@ $hr-width: 70%;
 $b-radius-1: 10px;
 $b-radius-2: 20px;
 $b-radius-circle: 100%;
-$form-shadow:0 0 .3rem #ffecec;
+$form-shadow:0 0 0rem #ffecec;
 
 //IMPORT
 
@@ -31,8 +31,6 @@ $form-shadow:0 0 .3rem #ffecec;
     }
 }
 
-
-
 //Elementos para todas las secciones
 
 input {
@@ -40,6 +38,11 @@ input {
 }
 
 //Navegacion para todas las secciones
+
+#nav__container{
+    position: relative;
+    z-index: 500;
+}
 
 .logo__nav {
     height: 50px;

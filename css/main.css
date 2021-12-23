@@ -17,7 +17,12 @@
 }
 
 input {
-  box-shadow: 0 0 0.3rem #ffecec;
+  box-shadow: 0 0 0rem #ffecec;
+}
+
+#nav__container {
+  position: relative;
+  z-index: 500;
 }
 
 .logo__nav {
@@ -38,9 +43,16 @@ input {
 .index__header {
   background-color: #000;
 }
+.index__header img {
+  position: absolute;
+  opacity: 0.2;
+  height: 100%;
+  width: 100%;
+}
 
 .index__main {
   background-color: #000;
+  position: relative;
 }
 
 .shop__main {
@@ -91,7 +103,7 @@ nav .navbar-brand {
 }
 
 .index__header {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,12 +127,14 @@ nav .navbar-brand {
   justify-content: end;
   text-align: center;
   position: sticky;
+  z-index: 1000;
 }
 .wpp__svg a {
   position: fixed;
   z-index: 500;
   color: green;
   margin-right: 30px;
+  margin-bottom: 30px;
   font-size: 2rem;
   background-color: #fff;
   width: 50px;

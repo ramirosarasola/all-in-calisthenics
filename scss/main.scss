@@ -16,7 +16,7 @@ $footer-width: 70%;
 //HEADER
 
 .index__header {
-    height: 70vh;
+    height: 90vh;
     @include flex-center(flex, column, center, center);
 
     .header__container {
@@ -29,12 +29,14 @@ $footer-width: 70%;
 .wpp__svg {
     @include flex-center(flex, row, end, end, );
     position: sticky;
+    z-index: 1000;
 
     a {
         position: fixed;
         z-index: 500;
         color: green;
         margin-right: 30px;
+        margin-bottom: 30px;
         font-size: 2rem;
         background-color: #fff;
         width: 50px;
