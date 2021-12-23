@@ -16,15 +16,28 @@ $footer-width: 70%;
 //HEADER
 
 .index__header {
-    height: 90vh;
-    @include flex-center(flex, column, center, center);
+    height: 80vh;
+    @include flex-center(flex, column,center,center);
+    p{
+        position: relative;
+        top: -15%;
+        font-size: 1.3rem;
+        
+    }
 
     .header__container {
         position: relative;
         top: -10%;
-        @include flex-center(flex, column, center, center, center);
+        @include flex-center(flex, column, start, center, start);
+        
+        a{
+            position: relative;
+            top: 60%
+        }
     }
+
 }
+
 
 .wpp__svg {
     @include flex-center(flex, row, end, end, );
@@ -52,6 +65,7 @@ $footer-width: 70%;
 
 //MAIN
 .index__main {
+    padding-top: 7rem;
     #index__main__container {
         max-width: 1170px;
         @include flex-center(flex, column, center, center, 0);

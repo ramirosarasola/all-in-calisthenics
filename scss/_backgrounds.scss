@@ -5,15 +5,18 @@ $l-gradient-blue:linear-gradient(2.6deg, rgba(10, 48, 255, 1) -0.9%, rgba(0, 0, 
 $black:#000;
 
 .index__header{
-    background-color: $black;
+    background-image: $black;
     img{
         position: absolute;
-        opacity: .2;
+        opacity: .1;
         height: 100%;
         width: 100%;
-        @media screen and (max-width:768px) {
-            visibility: hidden;            
-        }
+    }
+}
+
+.index__header--back1{
+    @media screen and (max-width:768px) {
+        visibility: hidden;            
     }
 }
 

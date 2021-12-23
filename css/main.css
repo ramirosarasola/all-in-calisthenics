@@ -41,16 +41,17 @@ input {
 }
 
 .index__header {
-  background-color: #000;
+  background-image: #000;
 }
 .index__header img {
   position: absolute;
-  opacity: 0.2;
+  opacity: 0.1;
   height: 100%;
   width: 100%;
 }
+
 @media screen and (max-width: 768px) {
-  .index__header img {
+  .index__header--back1 {
     visibility: hidden;
   }
 }
@@ -109,6 +110,10 @@ nav .navbar-brand {
   font-style: italic;
 }
 
+.index__header--title {
+  font-size: 4rem;
+}
+
 .index__section__shop {
   background-color: #fff;
   border: solid 1px;
@@ -135,21 +140,30 @@ nav .navbar-brand {
 }
 
 .index__header {
-  height: 90vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
+.index__header p {
+  position: relative;
+  top: -15%;
+  font-size: 1.3rem;
+}
 .index__header .header__container {
   position: relative;
   top: -10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
-  text-align: center;
+  text-align: start;
+}
+.index__header .header__container a {
+  position: relative;
+  top: 60%;
 }
 
 .wpp__svg {
@@ -179,6 +193,9 @@ nav .navbar-brand {
   transition-duration: 1s;
 }
 
+.index__main {
+  padding-top: 15rem;
+}
 .index__main #index__main__container {
   max-width: 1170px;
   display: flex;
