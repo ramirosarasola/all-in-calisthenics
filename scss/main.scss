@@ -17,20 +17,21 @@ $footer-width: 70%;
 
 .index__header {
     height: 80vh;
-    @include flex-center(flex, column,center,center);
-    p{
+    @include flex-center(flex, column, center, center);
+
+    p {
         position: relative;
         top: -15%;
         font-size: 1.3rem;
-        
+
     }
 
     .header__container {
         position: relative;
         top: -10%;
         @include flex-center(flex, column, start, center, start);
-        
-        a{
+
+        a {
             position: relative;
             top: 60%
         }
@@ -54,10 +55,11 @@ $footer-width: 70%;
         background-color: #fff;
         width: 50px;
         border-radius: 20px;
-        &:hover{
+
+        &:hover {
             transition-property: all;
-            transform: scale(1.3,1.3);
-            transform: rotate(360deg) ;
+            transform: scale(1.3, 1.3);
+            transform: rotate(360deg);
             transition-duration: 1s;
         }
     }
@@ -66,6 +68,7 @@ $footer-width: 70%;
 //MAIN
 .index__main {
     padding-top: 4rem;
+
     #index__main__container {
         max-width: 1170px;
         @include flex-center(flex, column, center, center, 0);
@@ -84,7 +87,7 @@ $footer-width: 70%;
                     border-radius: 10px;
                     width: 200px;
                     height: auto;
-                    box-shadow: .4rem .4rem 1rem #e3f9ff;
+                    box-shadow: .1rem .1rem .3rem #e3f9ff;
                 }
 
                 .main__img-app2 {
@@ -95,7 +98,7 @@ $footer-width: 70%;
 
             #index__main--desc {
                 max-width: 480px;
-                @include flex-center(flex,column,start,center,"");
+                @include flex-center(flex, column, start, center, "");
             }
 
         }
@@ -150,16 +153,28 @@ $footer-width: 70%;
             visibility: hidden;
         }
 
-        .container{
-            perspective: 1000px;            
+        .container {
+            perspective: 1000px;
         }
 
         .container__cards {
             max-width: 960px;
             position: absolute;
             height: 40vh;
-                        
+
             .container {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: repeat (3, 1fr);
+                gap: 2rem;
+                margin-top: 10rem;
+
+
                 .begginer:hover {
                     transform: rotateY(180deg);
                 }
@@ -182,7 +197,7 @@ $footer-width: 70%;
                 transform-style: preserve-3d;
 
                 .front {
-                    color: #fff;
+                    color: rgb(255, 255, 255);
                     height: 100%;
                     width: 100%;
                     display: flex;
@@ -195,7 +210,7 @@ $footer-width: 70%;
 
                     background: linear-gradient(#161616, #999999);
                     z-index: 2;
-                    backface-visibility: hidden;                    
+                    backface-visibility: hidden;
                 }
 
                 .back {
@@ -204,9 +219,10 @@ $footer-width: 70%;
                     z-index: 1;
                     transform: rotateY(180deg);
                     backface-visibility: visible;
-                                        
+
                     p {
-                        font-size: 10px;
+                        font-size: 1rem;
+                        font-style: italic;
                     }
                 }
 
@@ -254,6 +270,46 @@ $footer-width: 70%;
     }
 }
 
+.section__rutinas {
+    h3 {
+        text-decoration: underline 2px solid #fff;
+        line-height: 5rem;
+    }
+
+    p {
+        margin: 1rem;
+        line-height: 25px;
+    }
+
+    width: 80%;
+    margin: auto;
+    display: grid;
+}
+
+.programas__section--app {
+    .programas__section--app--back {
+        opacity: .2;
+        height: 200px;
+        width: 98.6vw;
+        position: absolute;
+        z-index: -1;
+
+    }
+
+    h2 {
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    color: rgb(255, 255, 255);
+
+    .programas__section--app--descargas {
+        img {
+            width: 130px;
+        }
+    }
+}
+
 //allinpro.html
 
 #beneficios {
@@ -269,23 +325,21 @@ $footer-width: 70%;
 
 //shop.html
 
-.shop__btn--contact{
+.shop__btn--contact {
     align-self: flex-end;
     position: absolute;
     top: 128px;
+
     @media screen and (max-width:768px) {
-        visibility:hidden;        
+        visibility: hidden;
     }
 }
 
-#section__shop{
-    .row{
-    img {
-        width: 200px;
-        height: 200px;
+#section__shop {
+    .row {
+        img {
+            width: 200px;
+            height: 200px;
+        }
     }
 }
-}
-
-
-

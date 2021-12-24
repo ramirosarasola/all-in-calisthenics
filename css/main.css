@@ -226,7 +226,7 @@ nav .navbar-brand {
   border-radius: 10px;
   width: 200px;
   height: auto;
-  box-shadow: 0.4rem 0.4rem 1rem #e3f9ff;
+  box-shadow: 0.1rem 0.1rem 0.3rem #e3f9ff;
 }
 .index__main #index__main__container .row #index__main--img .main__img-app2 {
   transform: skewY(-15deg);
@@ -300,6 +300,17 @@ nav .navbar-brand {
     position: absolute;
     height: 40vh;
   }
+  .section__programas .container__cards .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat 3, 1fr;
+    gap: 2rem;
+    margin-top: 10rem;
+  }
+  .section__programas .container__cards .container a {
+    text-decoration: none;
+    color: #fff;
+  }
   .section__programas .container__cards .container .begginer:hover, .section__programas .container__cards .container .advanzed:hover, .section__programas .container__cards .container .intermediate:hover {
     transform: rotateY(180deg);
   }
@@ -312,7 +323,7 @@ nav .navbar-brand {
     transform-style: preserve-3d;
   }
   .section__programas .container__cards .card .front, .section__programas .container__cards .card .back {
-    color: #fff;
+    color: white;
     height: 100%;
     width: 100%;
     display: flex;
@@ -333,7 +344,8 @@ nav .navbar-brand {
     backface-visibility: visible;
   }
   .section__programas .container__cards .card .back p {
-    font-size: 10px;
+    font-size: 1rem;
+    font-style: italic;
   }
 }
 .carousel__item img {
@@ -366,6 +378,38 @@ nav .navbar-brand {
     left: -200px;
   }
 }
+.section__rutinas {
+  width: 80%;
+  margin: auto;
+  display: grid;
+}
+.section__rutinas h3 {
+  text-decoration: underline 2px solid #fff;
+  line-height: 5rem;
+}
+.section__rutinas p {
+  margin: 1rem;
+  line-height: 25px;
+}
+
+.programas__section--app {
+  color: white;
+}
+.programas__section--app .programas__section--app--back {
+  opacity: 0.2;
+  height: 200px;
+  width: 98.6vw;
+  position: absolute;
+  z-index: -1;
+}
+.programas__section--app h2 {
+  font-style: italic;
+  font-weight: bold;
+}
+.programas__section--app .programas__section--app--descargas img {
+  width: 130px;
+}
+
 #beneficios h3 {
   font-size: 1.4rem;
 }
