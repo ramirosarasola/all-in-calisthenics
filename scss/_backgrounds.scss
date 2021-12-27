@@ -13,14 +13,81 @@ $light:#fff;
         height: 100%;
         width: 100%;
     }
-}
 
-.index__header--back1{
-    @media screen and (max-width:768px) {
-        visibility: hidden;            
+    &--back1{
+        @media screen and (max-width:768px) {
+            width: 200px;
+            height: 200px;
+            visibility: hidden;            
+        }
     }
 }
 
+//--------- programas.html ---------//
+
+.programas__header{
+    background-image: $black;
+    img{
+        position: absolute;
+        opacity: .1;
+        height: 70vh;
+        width: 100%;
+    }
+
+    &--back1{
+        @media screen and (max-width:768px) {
+            width: 200px;
+            height: 200px;
+            visibility: hidden;            
+        }
+    }
+}
+
+
+//--------- allinpro.html ------------//@extend
+
+.allinpro__header{
+    background-image: $black;
+    img{
+        position: absolute;
+        opacity: .1;
+        height: 119vh;
+        width: 100%;
+    }
+
+    &--back1{
+        @media screen and (max-width:968px) {
+            width: 200px;
+            height: 200px;
+            visibility: hidden;            
+        }
+    }
+}
+
+//--------- allinpro.html ------------//
+
+.shop__header{
+    background-image: $black;
+    img{
+        position: absolute;
+        opacity: .1;
+        height: 79vh;
+        width: 100%;
+
+        @media screen and (max-width:1125px) {
+            height: 106.5vh;
+            
+        }
+    }
+
+    &--back1{
+        @media screen and (max-width:968px) {
+            width: 200px;
+            height: 200px;
+            visibility: hidden;            
+        }
+    }
+}
 
 .index__main {
     background-color: $black;

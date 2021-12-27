@@ -49,9 +49,66 @@ input {
   height: 100%;
   width: 100%;
 }
-
 @media screen and (max-width: 768px) {
   .index__header--back1 {
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+  }
+}
+
+.programas__header {
+  background-image: #000;
+}
+.programas__header img {
+  position: absolute;
+  opacity: 0.1;
+  height: 70vh;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .programas__header--back1 {
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+  }
+}
+
+.allinpro__header {
+  background-image: #000;
+}
+.allinpro__header img {
+  position: absolute;
+  opacity: 0.1;
+  height: 119vh;
+  width: 100%;
+}
+@media screen and (max-width: 968px) {
+  .allinpro__header--back1 {
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+  }
+}
+
+.shop__header {
+  background-image: #000;
+}
+.shop__header img {
+  position: absolute;
+  opacity: 0.1;
+  height: 79vh;
+  width: 100%;
+}
+@media screen and (max-width: 1125px) {
+  .shop__header img {
+    height: 106.5vh;
+  }
+}
+@media screen and (max-width: 968px) {
+  .shop__header--back1 {
+    width: 200px;
+    height: 200px;
     visibility: hidden;
   }
 }
@@ -386,39 +443,12 @@ nav .navbar-brand {
     width: 200px;
     left: -200px;
   }
+  .container__cards .container .cards--movilidad {
+    position: absolute;
+    top: 200px;
+    left: -100px;
+  }
 }
-.section__rutinas {
-  width: 80%;
-  margin: auto;
-  display: grid;
-}
-.section__rutinas h3 {
-  text-decoration: underline 2px solid #fff;
-  line-height: 5rem;
-}
-.section__rutinas p {
-  margin: 1rem;
-  line-height: 25px;
-}
-
-.programas__section--app {
-  color: white;
-}
-.programas__section--app .programas__section--app--back {
-  opacity: 0.2;
-  height: 200px;
-  width: 98.6vw;
-  position: absolute;
-  z-index: -1;
-}
-.programas__section--app h2 {
-  font-style: italic;
-  font-weight: bold;
-}
-.programas__section--app .programas__section--app--descargas img {
-  width: 130px;
-}
-
 #beneficios h3 {
   font-size: 1.4rem;
 }
