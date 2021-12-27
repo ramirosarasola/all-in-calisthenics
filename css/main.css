@@ -473,4 +473,16 @@ nav .navbar-brand {
   height: 200px;
 }
 
+.login__header img {
+  margin-top: 6rem;
+  width: 100px;
+  height: 100px;
+}
+.login__header__container {
+  height: 70vh;
+}
+.login__header__container h1 {
+  font-size: 1.8rem;
+}
+
 /*# sourceMappingURL=main.css.map */

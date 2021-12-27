@@ -324,3 +324,19 @@ $footer-width: 70%;
         }
     }
 }
+
+.login__header{
+    img{
+        margin-top: 6rem;
+        width: 100px;
+        height: 100px;
+    }
+
+    &__container{
+    height: 70vh;
+    h1{
+        font-size: 1.8rem;
+    }
+    }
+
+}
