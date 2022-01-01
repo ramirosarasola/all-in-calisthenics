@@ -280,9 +280,9 @@ $footer-width: 70%;
                 left: -200px;
             }
         }
-    
-        .container{
-            .cards--movilidad{
+
+        .container {
+            .cards--movilidad {
                 position: absolute;
                 top: 200px;
                 left: -100px;
@@ -325,18 +325,19 @@ $footer-width: 70%;
     }
 }
 
-.login__header{
-    img{
+.login__header {
+    img {
         margin-top: 6rem;
         width: 100px;
         height: 100px;
     }
 
-    &__container{
-    height: 70vh;
-    h1{
-        font-size: 1.8rem;
-    }
+    &__container {
+        height: 70vh;
+
+        h1 {
+            font-size: 1.8rem;
+        }
     }
 
 }
