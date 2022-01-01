@@ -474,7 +474,7 @@ nav .navbar-brand {
 }
 
 .login__header img {
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 100px;
   height: 100px;
 }
@@ -483,6 +483,11 @@ nav .navbar-brand {
 }
 .login__header__container h1 {
   font-size: 1.8rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

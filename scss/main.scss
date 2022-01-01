@@ -329,7 +329,7 @@ $footer-width: 70%;
 
 .login__header {
     img {
-        margin-top: 3rem;
+        margin-top: 2rem;
         width: 100px;
         height: 100px;
     }
@@ -339,7 +339,7 @@ $footer-width: 70%;
 
         h1 {
             font-size: 1.8rem;
+            @include flex-center (flex,row,center,center,center);
         }
     }
-
 }
