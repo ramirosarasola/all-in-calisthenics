@@ -385,7 +385,7 @@ nav .navbar-brand {
     height: 200px;
     width: 290px;
     position: relative;
-    transition: all 1s linear;
+    transition: all 0.5s linear;
     transform-style: preserve-3d;
   }
   .section__programas .container__cards .card .front, .section__programas .container__cards .card .back {
