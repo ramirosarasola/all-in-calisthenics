@@ -350,6 +350,14 @@ nav .navbar-brand {
   height: 50px;
   border-radius: 100%;
 }
+#index__section__shop button {
+  border: solid 2px #464646;
+  margin-bottom: 10px;
+}
+#index__section__shop button:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 @media only screen and (min-width: 992px) {
   .section__programas {

@@ -154,6 +154,15 @@ $footer-width: 70%;
         height: 50px;
         border-radius: 100%;
     }
+
+    button{
+        border: solid 2px rgb(70, 70, 70);
+        margin-bottom: 10px;
+        &:hover{
+            background-color: #000;
+            color: #fff;
+        }        
+    }
 }
 
 //-------------  programas.html  ------------- //
