@@ -154,6 +154,10 @@ body {
   background-color: #000;
 }
 
+#section__shop {
+  background-image: linear-gradient(2.6deg, white -0.9%, black 78.4%);
+}
+
 nav {
   font-family: helvetica;
   font-size: 14px;
@@ -481,7 +485,7 @@ nav .navbar-brand {
   height: 200px;
 }
 #section__shop .row__btn--precios {
-  width: 30%;
+  width: 80px;
   margin: auto;
   margin-top: 5px;
 }

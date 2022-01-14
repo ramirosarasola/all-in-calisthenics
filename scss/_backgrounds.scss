@@ -46,7 +46,7 @@ $light:#fff;
 }
 
 
-//--------- allinpro.html ------------//@extend
+//--------- allinpro.html ------------//
 
 .allinpro__header {
     background-image: $black;
@@ -133,4 +133,11 @@ $light:#fff;
 
 body {
     background-color: $black;
+}
+
+
+//--------- shop.html ------------//
+
+#section__shop{
+    background-image:$l-gradient-black;
 }
