@@ -486,8 +486,8 @@ nav .navbar-brand {
 }
 #section__shop .row__btn--precios {
   width: 80px;
-  margin: auto;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: 60px;
 }
 
 .login__header img {
